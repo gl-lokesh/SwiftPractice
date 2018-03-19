@@ -93,7 +93,7 @@ class PlayTime {
         print("Taking the \(wakable.name) for a walk")
         wakable.walk(steps: 10)
         if  wakable is Dog {
-            dog.bark()
+            //Dog.bark()
         } else {
             print("\(wakable.name)")
         }
@@ -188,6 +188,33 @@ print("One inch is \(oneInch) meters")
 let threeFeet = 3.ft
 print("Three feet is \(threeFeet) meters")
 
+
+
+
+func average(numbers:Int...) -> Int {
+    var total = 0
+    for n in numbers {
+        total += n
+    }
+    return total/numbers.count
+}
+
+//var avg = average(numbers: 13,14,23)
+//print(avg)
+
+
+
+func joinStrings(strings: String[]) -> String {
+    var returnStr = ""
+    for str in strings {
+        returnStr += str
+    }
+    returnStr
+}
+
+func joinString(strs:String...) -> String{
+    return joinStrings(strings: strs)
+}
 
 
 
